@@ -11,10 +11,16 @@ Escribir un programa que imprima lo siguiente:
 */
 
 #include <iostream>
-using std::cout;
+#include <cmath>
+using namespace std;
 
 int main() {
-
-
+    std::cout<<("12*****")<<endl;
+    std::cout<<("123****")<<endl;
+    std::cout<<("1234***")<<endl;
+    std::cout<<("12345**")<<endl;
+    std::cout<<("123456*")<<endl;
+    std::cout<<("1234567")<<endl;
     return 0;
+
 }
