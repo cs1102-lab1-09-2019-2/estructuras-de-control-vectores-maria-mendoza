@@ -1,3 +1,4 @@
+
 /*
  Dado una funcion cuadratica, donde los parametros a, b, y c son leidos por la consola.
  Calcular las soluciones basado en las siguientes reglas:
@@ -23,6 +24,36 @@
 using namespace std;
 
 int main() {
-    float a, b, c, delta, x1, x2;
+  float a;
+  float b;
+  float c;
+
+  std::cout <<"Ingrese tres numeros separados por un espacio:";
+  cin>>a>>b>>c;
+
+  if (a==0 && b==0)
+  {
+    std::cout<<"No tiene solucion";
+  }
+  else if (a==0)
+  {
+    cout<<(-c/b);
+  }
+  else if ((b*b)-(4*a*c)<0)
+  {
+    std::cout<<"No tiene solucion";
+  }
+
+  else
+  {
+    float discri=(b*b)-(4*a*c);
+    float x1=((-1*b)+pow(discri,1/2)/(2*a));
+    float x2=((-1*b)-pow(discri,1/2)/(2*a));
+    std::cout<<"x1= "<<x1<<endl;
+    std::cout<<"x2= "<<x2<<endl;
+
+  }
+
+    
 
 }
